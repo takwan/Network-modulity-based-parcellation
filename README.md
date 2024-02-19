@@ -27,7 +27,11 @@ Thalamocortical triple-network dysconnectivities in psychosis ([Kim, M., **Kim, 
 - **03_cortmod_thrConn.m:** thresholding group-level cortico-cortical connectivity matrix, returing ./linkArray/links_group/**clink_thr###.net**.
 - **04_runCortmod_grp.sh:** identifying group-level cortical network modules, returing ./linkArray/links_group/modOut/**clink_thr###.clu**.
 - **cortmod_02_group.ipynb:** updating a group-level consensus matrix across the ranges, returning ./linkArray/links_group/modOut/**cortmod_grp.csv**.
-- **05_cortMod_parc_6mods.sh:** merging nodes to creat modular networks
+- **05_cortMod_parc_6mods.sh:** merging nodes to creat modular networks.
 
 ## Thalamic network parcellation
-
+### **thal_parcel.m:**
+- used the [Morel thalamus atlas](https://doi.org/10.1016/j.neuroimage.2009.10.042)
+- partial correlation between thalamic voxels and mean timeseries of each cortical module.
+- controlling for signals from rest of the cortical modules.
+- a winnter-take-all parcellation approach: assigning network labels where having the largest corr coeff.
