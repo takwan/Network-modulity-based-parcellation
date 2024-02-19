@@ -16,6 +16,7 @@ Thalamocortical triple-network dysconnectivities in psychosis ([Kim, M., **Kim, 
 ### 2. Identification of cortical network modules (subject-level)
 - **02_prepCortmod.sh:** used the [InfoMap algorithm](https://www.mapequation.org/infomap/).
 - returns ./linkArray/Subj##/modOut/**clink_thr###.clu**.
+- sample data: Subj01
 
 ### 3. Finding a consensus from the modularitiy data (subject-level)
 - **cortmod_01_update.ipynb:** updating a consensus matrix across the ranges (descending order).
