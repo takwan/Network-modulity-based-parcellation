@@ -23,10 +23,10 @@ Thalamocortical triple-network dysconnectivities in psychosis ([Kim, M., **Kim, 
 
 ### 4. Group-level cortical network mapping (repeat steps 1~3)
 - **cortmod_02_group.ipynb:** avaraging subject-level modularity matrices, returning ./linkArray/**consMatDM_low.csv**.
-- **cortmod_thrConn.m:** thresholding group-level cortico-cortical connectivity matrix, returing ./linkArray/links_group/**clink_thr###.net**.
-- **runCortmod_grp.sh:** identifying group-level cortical network modules, returing ./linkArray/links_group/modOut/**clink_thr###.clu**.
+- **03_cortmod_thrConn.m:** thresholding group-level cortico-cortical connectivity matrix, returing ./linkArray/links_group/**clink_thr###.net**.
+- **04_runCortmod_grp.sh:** identifying group-level cortical network modules, returing ./linkArray/links_group/modOut/**clink_thr###.clu**.
 - **cortmod_02_group.ipynb:** updating a group-level consensus matrix across the ranges, returning ./linkArray/links_group/modOut/**cortmod_grp.csv**.
-- **cortMod_parc_332_6mods.sh:** merging nodes to creat modular networks
+- **05_cortMod_parc_6mods.sh:** merging nodes to creat modular networks
 
 ## Thalamic network parcellation
 
