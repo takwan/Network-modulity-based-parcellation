@@ -4,6 +4,12 @@ Thalamocortical triple-network dysconnectivities in psychosis ([Kim, M., **Kim, 
 
 > ref to [Hwang, K. et al. 2017, J Neurosci](https://doi.org/10.1523/jneurosci.0067-17.2017): Modularity-based thalamic parcellation.
 
+---
+# Atlas created using resting-state fMRI data
+- ./cortMod_parc_6mods/**cortNet_mods.nii.gz:** cortical modular networks
+- ./thalMod_parc_6mods/**thalNet_mods.nii.gz:** thalamic modular networks
+- data from 273 individuals with (high risk for) psychosis or without any psychiatric disorder (healthy volunteers).
+- data acquisition from Dept of Psychiatry at Seoul National University Hospital (PI: Prof. Jun Soo Kwon).
 
 ---
 # Codes
@@ -30,7 +36,7 @@ Thalamocortical triple-network dysconnectivities in psychosis ([Kim, M., **Kim, 
 - **05_cortMod_parc_6mods.sh:** merging nodes to creat modular networks.
 
 ## Thalamic network parcellation
-### **thal_parcel.m:**
+### **06_thal_parcel.m:**
 - used the [Morel thalamus atlas](https://doi.org/10.1016/j.neuroimage.2009.10.042)
 - partial correlation between thalamic voxels and mean timeseries of each cortical module.
 - controlling for signals from rest of the cortical modules.
